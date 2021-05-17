@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Mania załączania - Mikołaj Rotnicki</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<style>
+		.container{
+		    display: flex;
+		    align-items: center;
+		}
+		.col{
+		    flex: 1;
+		}
+		.dolewej{
+			text-align: left;
+		}
+
+		a:link {
+			text-decoration: underline;
+		}
+
+		.wielkimi {
+			text-transform: uppercase;
+		}
+
+		.malymi {
+			text-transform: lowercase;
+		}
+
+		</style>
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<section>
+					<img alt="Grafika przedstawiająca spinacz nasunięty na kartkę papieru, obok emotikonka symbolizująca okrzyk strachu" class="r-stretch" src="img/zalacznik.png">
+					<h1>Mania załączania</h1>
+					<p>o powszechnej praktyce nadmiernego stosowania załączników na stronach internetowych oraz w wiadomościach e-mail i problemach z dostępnością jakie to powoduje</p>
+					<p>Mikołaj Rotnicki - <a href="http://www.utilitia.pl" target="_blank">Utilitia sp. z o.o.</a></p>
+					<p class="r-fit-text">Konferencja online: Dostępność cyfrowa – misja (nie)możliwa?!</p>
+					<p><a href="https://globalaccessibilityawarenessday.org" target="_blank">Światowy Dzień Wiedzy o Dostępności</a> - #GAAD2021</p>
+					<p><a href="http://www.zapisy.warszawadostepna.pl/" target="_blank">Warszawska Akademia Dostępności</a> &#8226; <a href="">Fundacja Kultury Bez Barier</a> &#8226; <a href="https://www.um.warszawa.pl/" target="_blank">M.St. Warszawa</a></p>
+				</section>
+
+				<section data-background="img/spinacze.jpeg" data-background-opacity="0.2">
+					<h1>Załączniki</h1>
+					<div class="container">
+					<div class="col fragment fade-right">
+						<h2>E-mail</h2>
+						<img align="Ikona z kopertą" style="border-radius: 50px" width="500px" src="img/email.png">
+					</div>
+					<div class="col fragment fade-left">
+						<h2>Strony WWW</h2>
+						<img align="Ikona z przeglądarką wyświętlającą stronę www" style="border-radius: 50px" width="500px" src="img/www.png">
+					</div>
+					</div>					
+				</section>
+
+				<section>
+					<h1>Załączniki w e-mailach - odbieranie</h1>
+					<ol class="">
+						<li class="fragment">Otwarcie wiadomości w aplikacji do obsługi poczty elektronicznej (komputer, mobile, web)</li>
+						<li class="fragment">Zapoznanie się z główną treścią wiadomości</li>
+						<li class="fragment">Pobranie i zapisanie załączników</li>
+						<li class="fragment">Rozpakowanie załączników (ZIP, RAR - wymagane oprogramowanie)</li>
+						<li class="fragment">Otwarcie załączników (wymagane oprogramowanie dla danego typu załącznika)</li>
+						<li class="fragment">Zapoznanie się z treścią załączników</li>
+					</ol>
+					<p class="fragment r-fit-text wielkimi">6 czynności</p>
+				</section>
+
+				<section data-fragments>
+					<h1>Załączniki w e-mailach - wysyłanie</h1>
+					<ol class="">
+						<li class="fragment">Utworzenie nowej wiadomości w aplikacji do obsługi poczty elektronicznej (komputer, mobile, web)</li>
+						<li class="fragment">Napisanie głównej treści wiadomości</li>
+						<li class="fragment">Utworzenie i zredagowanie treści załączników (wymagane oprogramowanie dla danego typu załącznika)</li>
+						<li class="fragment">Zapisanie załączników</li>
+						<li class="fragment">Spakowanie załączników (ZIP, RAR - wymagane oprogramowanie)</li>
+						<li class="fragment">Dodanie załączników do wiadomości</li>
+						<li class="fragment">Wysłanie wiadomości</li>
+					</ol>
+					<p class="fragment r-fit-text wielkimi">7 czynności</p>
+				</section>
+
+				<section>
+					<h1>Do przekazania informacji e-mailem z załącznikami potrzebnych jest aż<br><span class="r-fit-text">13 czynności</span></h1>
+				</section>
+
+				<section>
+					<h1>Załączniki na stronach internetowych (WWW)</h1>
+					<ol>
+						<li class="fragment">Zapoznanie się z główną treścią strony internetowej</li>
+						<li class="fragment">Odszukanie i zidentyfikowanie łączy (linków) do załączonych na stronie plików</li>
+						<li class="fragment">Pobranie i zapisanie załączników</li>
+						<li class="fragment">Rozpakowanie załączników (ZIP, RAR - wymagane oprogramowanie)</li>
+						<li class="fragment">Otwarcie załączników (wymagane oprogramowanie dla danego typu załącznika)</li>
+						<li class="fragment">Zapoznanie się z treścią załączników</li>
+					</ol>
+					<p class="fragment r-fit-text wielkimi">6 czynności</p>
+				</section>
+
+				<section>
+					<h1>Problemy z dostępnością załączników</h1>
+				</section>
+
+				<section>
+					<h1>Skany</h1>
+					<div class="container">
+					<div class="col">
+						<img alt="Zeskanowany dokument" style="height: 800px" src="img/skan.jpg">
+					</div>
+					<div class="col">
+						<ul>
+							<li class="fragment">Są obrazem tekstu zamiast tekstem</li>
+							<li class="fragment">Nie zawierają warstwy tekstowej</li>
+							<li class="fragment">Nie posiadają zaprogramowanej struktury i kolejności odczytu</li>
+							<li class="fragment">Nie są przeszukiwalne</li>
+							<li class="fragment">Nie są możliwe do wizualnego dostosowania (wielkosć czcionki, wysoki kontrast itp.)</li>
+							<li class="fragment">Są niedostępne dla czytników ekranu</li>
+							<li class="fragment">Ich zawaryość nie jest indeksowana przez wyszukiwarki (Google itp.)</li>
+							<li class="fragment">Zawarte w nich ewentualne podpisy oraz pieczątki nie mają żadnej wartości poświadczającej ich oryginalność (jest ona równa kserokopii)</li>
+						</ul>
+					</div>
+					</div>
+				</section>
+
+				<section>
+					<h1>Różnorodne formaty załączników</h1>
+					<div class="container">
+					<div class="col">
+						<img alt="Ikony róznych formatów plików" style="height: 800px" src="img/formaty.png">
+					</div>
+					<div class="col">
+						<ul>
+							<li class="fragment">Nie powstały z myślą o używaniu w internecie</li>
+							<li class="fragment">Wymagają posiadania dodatkowego, dedykowanego, często komercyjnego oprogramowania do ich obsługi</li>
+							<li class="fragment">Zamieszczane na stronach www, wymagają dostępnego i konsekwentnego opisywania treści łączy do nich prowadzących</li>
+							<li class="fragment">Niektóre otwierają się bezpośrednio w przeglądarkach internetowych, inne wymagają ich pobrania i zapisania - co może być dezorientujące</li>
+							<li class="fragment">Zajmują znacznie więcej miejsca niż informacja zapisana w treści strony (HTML)</li>
+							<li class="fragment">Wymagają przygotowania ich w dostępny sposób - zgodnie ze specyfikacją danego formatu</li>
+							<li class="fragment">Wymagają żmudnej i czasochłonnej pracy w przypadku aktualizacji ich treści</li>
+						</ul>
+					</div>
+					</div>
+				</section>
+
+				<section>
+					<h1>E-maile bez załączników - odbieranie</h1>
+					<ol class="">
+						<li class="fragment">Otwarcie wiadomości w aplikacji do obsługi poczty elektronicznej (komputer, mobile, web)</li>
+						<li class="fragment">Zapoznanie się z główną treścią wiadomości</li>
+					</ol>
+					<p class="fragment r-fit-text wielkimi">2 czynności</p>
+				</section>
+
+				<section data-fragments>
+					<h1>E-maile bez załącznika - wysyłanie</h1>
+					<ol class="">
+						<li class="fragment">Utworzenie nowej wiadomości w aplikacji do obsługi poczty elektronicznej (komputer, mobile, web)</li>
+						<li class="fragment">Napisanie głównej treści wiadomości</li>
+						<li class="fragment">Wysłanie wiadomości</li>
+					</ol>
+					<p class="fragment r-fit-text wielkimi">3 czynności</p>
+				</section>
+
+				<section>
+					<h1>Do przekazania informacji e-mailem bez załączników potrzeba tylko<br><span class="r-fit-text">5 czynności</span></h1>
+				</section>
+
+				<section>
+					<h1>Strony WWW bez załączników</h1>
+					<ol>
+						<li class="fragment">Zapoznanie się z główną treścią strony internetowej</li>
+					</ol>
+					<p class="fragment r-fit-text wielkimi">1 czynność</p>
+				</section>
+
+				<section data-background="#CC0000">
+					<h1 class="malymi">Nie (nad)używaj załączników<br>w e-mailach i na stronach www</h1>
+				</section>			
+
+				<section data-background="#005500">
+					<h1>Jeśli to tylko możliwe przekazuj informacje w treści głównej e-maila oraz strony internetowej zamiast używać do tego załączników</h1>
+				</section>	
+
+				<section>
+					<h1>Dziękuję</h1>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				width: 1920,
+				height: 1080,
+				autoPlayMedia: true,
+				progress: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
