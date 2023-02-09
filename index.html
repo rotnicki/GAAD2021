@@ -224,10 +224,25 @@
 				height: 1080,
 				autoPlayMedia: true,
 				progress: false,
+				
+				dependancies [
+					{ src: 'plugin/tts_min/tts_min_reveal.js', async: false}
+				]
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+			Reveal.addEventListener( 'ready', function( event ) {
+			//  Add this if you want to read the opening slide.
+			// event.currentSlide, event.indexh, event.indexv
+				var thisSlide = Reveal.getCurrentSlide();
+				if (tts.On) {
+					// Read the innerText for the listed elements of current slide after waiting 1 second to allow transitions to conclude.
+					setTimeout(function(){tts.ReadVisElmts(thisSlide,"h1","h2","h3","p","li");}, 1000);
+					// Read the textContent for the listed elements of the current slide, even hidden ones, after 1 second. In this case the notes class.
+					if (tts.readNotes) setTimeout(function(){tts.ReadAnyElmts(thisSlide,".notes");}, 1000);
+				}
+			} );
 		</script>
 	</body>
 </html>
